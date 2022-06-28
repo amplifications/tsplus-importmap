@@ -1,0 +1,8 @@
+{
+  "importMap": {
+    "(.*)/try.tsplus/(.*)\\.ts": "@xxx/$2"
+  },
+  "traceMap": {
+    "^(.*)/try\\.tsplus/(.*)\\.ts$": "(@xxx/$2) $3"
+  }
+}

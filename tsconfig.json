@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "out/ts+/", // needed to be overridden here, because of  https://github.com/microsoft/TypeScript/issues/29172
+    "baseUrl": "./code",
+    "paths": {
+      "@xxx/*": ["xxx.try/try.tsplus/*"]
+    }
+  },
+  "include": ["code/**/*", "global.d.ts"],
+  "exclude": ["node_modules", "**/*.ignore/**", "**/*ignore*/**", "**/*ignore*"]
+}

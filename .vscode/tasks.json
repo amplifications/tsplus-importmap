@@ -1,0 +1,106 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm-watch",
+      "type": "npm",
+      "script": "watch",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "npm: lits",
+      "type": "npm",
+      "script": "lits",
+      "problemMatcher": [],
+      "detail": "lits",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "npm: test-once",
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": [],
+      // "detail": "jest --coverage",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+
+    // fold.forHumans and necessary sub-tasks
+    {
+      "label": "fold.blockComments",
+      "command": "${command:editor.foldAllBlockComments}"
+    },
+    {
+      "label": "fold.toDefinitions",
+      "command": "${command:extension.fold_to_definitions}"
+    },
+    {
+      "label": "fold.regions",
+      "command": "${command:editor.foldAllMarkerRegions}"
+    },
+    {
+      "label": "fold.forHumans",
+      "dependsOrder": "sequence",
+      "dependsOn": ["fold.toDefinitions", "fold.blockComments", "fold.regions"],
+      "problemMatcher": []
+    },
+
+    // toggle custom zen mode
+    {
+      "label": "toggle.primarySideBar",
+      "command": "${command:workbench.action.toggleSidebarVisibility}"
+    },
+    {
+      "label": "toggle.secondarySideBar",
+      "command": "${command:workbench.action.toggleAuxiliaryBar}"
+    },
+    {
+      "label": "toggle.panel",
+      "command": "${command:workbench.action.togglePanel}"
+    },
+    {
+      "label": "toggle.statusBar",
+      "command": "${command:workbench.action.toggleStatusbarVisibility}"
+    },
+    {
+      "label": "toggle.maximizeEditorGroup",
+      "command": "${command:workbench.action.minimizeOtherEditors}"
+    },
+    {
+      "label": "toggle.zen",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "toggle.primarySideBar",
+        "toggle.secondarySideBar",
+        "toggle.panel",
+        "toggle.statusBar"
+        // "toggle.maximizeEditorGroup"
+      ]
+    }
+  ]
+}

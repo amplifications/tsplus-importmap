@@ -1,0 +1,309 @@
+{
+  "autoHide.autoHideSideBar": false,
+  "better-comments.highlightPlainText": false,
+  "better-comments.multilineComments": true,
+  "better-comments.tags": [
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#FF2D00",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "!",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#3498DB",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "?",
+      "underline": false
+    },
+    {
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "color": "#98C379",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "*",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#666666",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "۰",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#666666",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "#region",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#666666",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "#endregion",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#AAAAAA",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "###",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": false,
+      "color": "#BBBBBB",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "##",
+      "underline": false
+    },
+    {
+      "backgroundColor": "transparent",
+      "bold": true,
+      "color": "#FFFFFF",
+      "italic": false,
+      "strikethrough": false,
+      "tag": "#",
+      "underline": false
+    }
+  ],
+  "editor.fontFamily": "\"Fira Code\",Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.hover.enabled": true,
+  "editor.inlayHints.fontSize": 10,
+  "editor.inlineSuggest.enabled": true,
+  "editor.showFoldingControls": "always",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment.block.documentation",
+        "settings": {
+          "foreground": "#999999"
+        }
+      }
+    ]
+  },
+  "editor.unicodeHighlight.allowedCharacters": {
+    "ʼ": true,
+    "۰": true,
+    "Ⳇ": true
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "explorer.autoReveal": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.excludeGitIgnore": true,
+  "explorer.openEditors.sortOrder": "alphabetical",
+  "explorer.sortOrder": "mixed",
+  "explorer.sortOrderLexicographicOptions": "default",
+  "files.associations": {
+    "*.log": "vt100"
+  },
+  "foam.edit.linkReferenceDefinitions": "withoutExtensions",
+  "foam.graph.titleMaxLength": 48,
+  "foam.openDailyNote.directory": "",
+  "foam.openDailyNote.titleFormat": "",
+  "fold.level": 3,
+  "git.decorations.enabled": true,
+  "git.enableSmartCommit": true,
+  "git.ignoreSubmodules": true,
+  "highlight.regexes": {
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "decorations": [
+        {
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#cc0000"
+        },
+        {
+          "backgroundColor": "#cc0000",
+          "color": "#1f1f1f"
+        }
+      ],
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "decorations": [
+        {
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#cc00cc"
+        },
+        {
+          "backgroundColor": "#cc00cc",
+          "color": "#1f1f1f"
+        }
+      ],
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "decorations": [
+        {
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#00ccff"
+        },
+        {
+          "backgroundColor": "#00ccff",
+          "color": "#1f1f1f"
+        }
+      ],
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+    },
+    "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+      "decorations": [
+        {
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#ffcc00"
+        },
+        {
+          "backgroundColor": "#ffcc00",
+          "color": "#1f1f1f"
+        }
+      ],
+      "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+    }
+  },
+  "jest.autoRun": {
+    "onSave": "test-file",
+    "onStartup": ["all-tests"],
+    "watch": true
+  },
+  "jest.coverageFormatter": "GutterFormatter",
+  "jest.jestCommandLine": "npm run test --",
+  "jest.showCoverageOnLoad": true,
+  "jumpSource.testFileExtension": "sameAsSource",
+  "jumpSource.testFileSuffix": "tspec",
+  "jumpSource.testSubFolder": "",
+  "LineCount.excludes": [
+    "**/*.png",
+    "**/.vscode/**",
+    "**/node_modules/**",
+    "**/out/**",
+    "**/test.coverage/**",
+    ".dependencygraph/**",
+    "package*.json"
+  ],
+  "LineCount.order": "desc",
+  "LineCount.output": {
+    "csv": false,
+    "json": false,
+    "md": true,
+    "outdir": "./out-saved/",
+    "txt": false
+  },
+  "LineCount.sort": "totalline",
+  "LineCount.statistics": true,
+  "liveServer.settings.port": 5505,
+  "npm.exclude": ["**/out/**"],
+  "pasteImage.basePath": "${currentFileDir}/_.res.resources",
+  "pasteImage.filePathConfirmInputBoxMode": "onlyName",
+  "pasteImage.insertPattern": "${imageSyntaxPrefix}_.res.resources/${imageFilePath}${imageSyntaxSuffix}",
+  "pasteImage.path": "${currentFileDir}/_.res.resources",
+  "pasteImage.showFilePathConfirmInputBox": true,
+  "peacock.color": "#42b883",
+  "prettier.enableDebugLogs": true,
+  "prettier.singleQuote": true,
+  "regionHighlighterDimmer.defaultColor": "lightblack",
+  "regionHighlighterDimmer.defaultTheme": "Default Color",
+  "regionHighlighterDimmer.opacity": "0.75",
+  "scm.countBadge": "focused",
+  "scm.diffDecorationsGutterAction": "none",
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
+  "scm.diffDecorationsGutterVisibility": "always",
+  "scm.diffDecorationsGutterWidth": 5,
+  "scm.providerCountBadge": "auto",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "todo.embedded.exclude": [
+    "**/*.map",
+    "**/*.min.*",
+    "**/*.{3ds,3g2,3gp,7z,a,aac,adp,ai,aif,aiff,alz,ape,apk,ar,arj,asf,au,avi,bak,baml,bh,bin,bk,bmp,btif,bz2,bzip2,cab,caf,cgm,class,cmx,cpio,cr2,csv,cur,dat,dcm,deb,dex,djvu,dll,dmg,dng,doc,docm,docx,dot,dotm,dra,DS_Store,dsk,dts,dtshd,dvb,dwg,dxf,ecelp4800,ecelp7470,ecelp9600,egg,eol,eot,epub,exe,f4v,fbs,fh,fla,flac,fli,flv,fpx,fst,fvt,g3,gif,graffle,gz,gzip,h261,h263,h264,icns,ico,ief,img,ipa,iso,jar,jpeg,jpg,jpgv,jpm,jxr,key,ktx,lha,lib,lvp,lz,lzh,lzma,lzo,m3u,m4a,m4v,mar,mdi,mht,mid,midi,mj2,mka,mkv,mmr,mng,mobi,mov,movie,mp3,mp4,mp4a,mpeg,mpg,mpga,mxu,nef,npx,numbers,o,oga,ogg,ogv,otf,pages,pbm,pcx,pdb,pdf,pea,pgm,pic,png,pnm,pot,potm,potx,ppa,ppam,ppm,pps,ppsm,ppsx,ppt,pptm,pptx,psd,pya,pyc,pyo,pyv,qt,rar,ras,raw,resources,rgb,rip,rlc,rmf,rmvb,rtf,rz,s3m,s7z,scpt,sgi,shar,sil,sketch,slk,smv,so,sub,swf,tar,tbz,tbz2,tga,tgz,thmx,tif,tiff,tlz,ttc,ttf,txz,udf,uvh,uvi,uvm,uvp,uvs,uvu,viv,vob,war,wav,wax,wbmp,wdp,weba,webm,webp,whl,wim,wm,wma,wmv,wmx,woff,woff2,wvx,xbm,xif,xla,xlam,xls,xlsb,xlsm,xlsx,xlt,xltm,xltx,xm,xmind,xpi,xpm,xwd,xz,z,zip,zipx}",
+    "**/.*",
+    "**/.*/**",
+    "**/bower_components/**",
+    "**/build/**",
+    "**/CHANGELOG",
+    "**/CHANGELOG.*",
+    "**/dist/**",
+    "**/node_modules/**",
+    "**/out/**",
+    "**/output/**",
+    "**/release/**",
+    "**/releases/**",
+    "**/static/**",
+    "**/target/**",
+    "**/test.coverage/**",
+    "**/third_party/**",
+    "**/vendor/**",
+    "**/venv/**",
+    "**/_output/**"
+  ],
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.suggest.jsdoc.generateReturns": false,
+  "typescript.suggest.objectLiteralMethodSnippets.enabled": true,
+  "typescriptExplicitTypes.formatAfterGeneration": true,
+  "window.zoomLevel": 0,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#65c89b",
+    "activityBar.activeBorder": "#945bc4",
+    "activityBar.background": "#65c89b",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#945bc4",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#65c89b",
+    "statusBar.background": "#42b883",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#359268",
+    "statusBarItem.remoteBackground": "#42b883",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#42b883",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#42b88399",
+    "titleBar.inactiveForeground": "#15202b99",
+    "[Default Dark+]": {
+      "editorInlayHint.background": "#11111100",
+      "editorInlayHint.foreground": "#555555",
+      "tab.activeBackground": "#444444",
+      "tab.activeBorder": "#ffffff",
+      "tab.activeBorderTop": "#ffffff",
+      "tab.inactiveBackground": "#000000"
+    }
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.editor.revealIfOpen": true,
+  "workbench.iconTheme": "vs-seti",
+  "workbench.preferredDarkColorTheme": "Default Dark+",
+  "workbench.productIconTheme": "fluent-icons",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

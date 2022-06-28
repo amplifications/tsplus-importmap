@@ -1,0 +1,49 @@
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    // "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "eslint-plugin-mxm", "jsdoc"],
+  "reportUnusedDisableDirectives": false,
+  "root": true,
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-undef": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "no-extra-boolean-cast": "off",
+    "no-self-assign": "off",
+    "prefer-const": "off",
+    "semi": "off",
+    "mxm/avoid-relative-imports": "warn",
+    "mxm/have-begin-end-file-fns": "warn",
+    "mxm/have-begin-end-file-comments": "warn",
+    "mxm/have-function-jsdocs": "warn",
+    "mxm/have-headers-contain-haskell-signatures": "warn",
+    "jsdoc/require-file-overview": "off",
+    "jsdoc/require-jsdoc": "off"
+  },
+  "ignorePatterns": [
+    "jest.config.ts",
+    "global.d.ts",
+    "lits-create-toc.sh",
+    "**/test.coverage/**",
+    "**/*.ignore/**",
+    "out",
+    "_code"
+  ],
+  "overrides": [
+    {
+      "files": ["code/Adapters/*.ts"],
+      "rules": {
+        "mxm/have-begin-end-file-fns": "off"
+      }
+    }
+  ]
+}

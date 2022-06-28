@@ -1,0 +1,58 @@
+{
+  "name": "app-plus",
+  "version": "1.0.0",
+  "author": "",
+  "description": "MIRCHI LIME",
+  "license": "TBD",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxmInc/mxm-5.x-max-euwe.1935.git"
+  },
+  "scripts": {
+    "_______________ 0. fav(s) ": "",
+    "test": "           jest",
+    "_______________ 1. install(s) ": "",
+    "postinstall": "    tsplus-install",
+    "_______________ 2. build(s) ": "",
+    "ts-lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "_______________ 3. run(s) ": "",
+    "clear-last-run-logs": "rm logs/mxm-last-run.log || true",
+    "_______________ 4. test(s) ": "",
+    "test-once": "       npm run clear-last-run-logs && NODE_PATH=./code jest --detectOpenHandles",
+    "test-coverage": "   npm run clear-last-run-logs && NODE_PATH=./code jest --coverage --detectOpenHandles",
+    "test-watch": "      npm run clear-last-run-logs && NODE_PATH=./code jest --watch",
+    "test-watchAll": "   npm run clear-last-run-logs && NODE_PATH=./code jest --watchAll",
+    "jest-clear": "      npm run clear-last-run-logs && NODE_PATH=./code jest --clearCache",
+    "_______________ 5. docs(s) ": "",
+    "lits-publish": "   npm-run-all --sequential lits-gen-clean cp-out-to-wiki-gh-pages ",
+    "lits-gen": "       npm-run-all --sequential                 gen-lits-ToC lits cp-assets-to-out ",
+    "lits-gen-clean": " npm-run-all --sequential -c clean-outdir gen-lits-ToC lits cp-assets-to-out ",
+    "lits": "           lits",
+    "litsW": "          lits --watch",
+    "clean-outdir": "   rm -rf out/lits-htmls && mkdir out/lits-htmls && cp out-saved/lits-ToC.generated.json out/lits-htmls/lits-toc.json",
+    "gen-lits-ToC": "   tools/lits-create-toc.sh && cp out-saved/lits-ToC.generated.json out/lits-htmls/lits-toc.json",
+    "cp-assets-to-out": "copyfiles  -e \"node_modules/**\" -e \"out/**\" **/*.png out/lits-htmls",
+    "cp-out-to-wiki-gh-pages": "rm -rf ../../packages/wiki-gh-pages/lits-htmls && cp -R out/lits-htmls ../../packages/wiki-gh-pages/lits-htmls",
+    "_______________ 6. publish(s)/deploy(s) ": "",
+    "_______________ 9. watch(s) ": "",
+    "watch": "npm-watch lits-gen"
+  },
+  "devDependencies": {
+    "@relmify/jest-fp-ts": "^2.0.0",
+    "@tsplus/installer": "^0.0.123",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "jest-mock-console": "^1.2.3",
+    "npm-run-all": "^4.1.5",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "jest-environment-node": "^28.1.0",
+    "module-alias-jest": "^0.0.3",
+    "ts-jest": "^28.0.5"
+  }
+}

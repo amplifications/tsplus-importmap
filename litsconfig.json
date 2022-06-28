@@ -1,0 +1,18 @@
+{
+  "baseDir": ".",
+  "exclude": [".git", "node_modules", "**/*.ignore/**", "**res.resources**"],
+  "dependencyGraph": "lits-dependency.json",
+  "files": ["**/**.md", "**/**.json"],
+  "frontMatter": {
+    "projectName": "MIR۰CHI۰LIME",
+    "repository": "https://github.com/mxmInc/mxm-5.x-max-euwe.1935",
+    "footer": "Copyright © 2022 maxmantra <copyright@maxmantra.com>",
+    "footerLocation": "content-area",
+    "userTheme": "litsconfig.user-theme.less"
+  },
+  "outDir": "out/lits-htmls",
+  "outputFormat": "html",
+  "silent": true,
+  "tocFile": "lits-toc.json",
+  "updateToc": false
+}

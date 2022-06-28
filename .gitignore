@@ -1,0 +1,11 @@
+node_modules/
+packages/*/lib
+out/
+lerna-debug.log
+npm-debug.log
+test.coverage/
+packages/app/xxx.ignore/**
+packages/app/lits-gen-TOC.json
+packages/app/lits-gen-TOC.json
+packages/app/lits-gen-TOC.**
+logs/
