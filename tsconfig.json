@@ -5,7 +5,8 @@
     "baseUrl": "./code",
     "paths": {
       "@xxx/*": ["xxx.try/try.tsplus/*"]
-    }
+    },
+    "tsPlusConfig": "./tsplus.config.json"
   },
   "include": ["code/**/*", "global.d.ts"],
   "exclude": ["node_modules", "**/*.ignore/**", "**/*ignore*/**", "**/*ignore*"]

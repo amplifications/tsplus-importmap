@@ -39,6 +39,9 @@ export const config: Config.InitialOptions = {
   ],
   verbose: true,
 
+  moduleNameMapper: {
+    '^@xxx/(.*)$': '<rootDir>/code/xxx.try/try.tsplus/$1',
+  },
   //testPathIgnorePatterns: ['jest.config.ts', 'global.d.ts',],
 };
 
